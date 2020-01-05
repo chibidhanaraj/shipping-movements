@@ -2,20 +2,16 @@
   "name": "shipping-movements-data",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chibidhanaraj/maxican-movements.git"
+    "url": "https://github.com/chibidhanaraj/shipping-movements.git"
   },
   "author": "Chibi Dhanaraj",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/chibidhanaraj/maxican-movements/issues"
-  },
-  "homepage": "https://github.com/chibidhanaraj/maxican-movements#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "camelcase-keys": "^6.1.1",
