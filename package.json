@@ -1,0 +1,31 @@
+{
+  "name": "shipping-movements-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chibidhanaraj/maxican-movements.git"
+  },
+  "author": "Chibi Dhanaraj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chibidhanaraj/maxican-movements/issues"
+  },
+  "homepage": "https://github.com/chibidhanaraj/maxican-movements#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "camelcase-keys": "^6.1.1",
+    "express": "^4.17.1",
+    "fs-extra": "^8.1.0",
+    "lodash": "^4.17.15",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "pug": "^2.0.4",
+    "xls-to-json-lc": "^0.3.4",
+    "xlsx-to-json-lc": "^0.5.0"
+  }
+}

@@ -1,0 +1,32 @@
+
+extend layout
+
+block content
+    
+    mixin shipping-lists(shippingList) 
+        tr
+            td.column1= shippingList.shipmentDate
+            td.column3= shippingList.shipperName
+            td.column1= shippingList.qty
+            td.column2= shippingList.destination
+            td.column3= shippingList.importerName
+            td.column3= shippingList.country
+
+    include searchHeader
+
+    .limiter
+        .container-table100
+            .wrap-table100
+                .table100
+                    table#myTable
+                        -const headerTitles = ['SHIPMENT DATE', 'SHIPPER NAME', 'CARTONS', 'DESTINATION', 'IMPORTER NAME', 'IMPORTER COUNTRY']
+                        thead
+                            tr.table100-head
+                                each headerTitle in headerTitles
+                                    th.column1= headerTitle
+
+                        tbody
+                            each shippingList in shippingLists
+                                +shipping-lists(shippingList)
+                            
+    script(src="/javascripts/searchQuery.js")

@@ -1,0 +1,20 @@
+.searchHeader
+  label.radioHeader(for='opt1')
+    input#opt1.hidden(type='radio' name='selectSearchType' value="1" onclick='selectSearchByType()')
+    span.label
+    | Search by Shipper Name
+  label.radioHeader(for='opt2')
+    input#opt2.hidden(type='radio' name='selectSearchType' value="4" onclick='selectSearchByType()')
+    span.label
+    | Search by Importer Name
+  label.radioHeader(for='opt3')
+    input#opt3.hidden(type='radio' name='selectSearchType' value="5" onclick='selectSearchByType()')
+    span.label
+    | Search by Importer Country
+  label.radioHeader(for='opt4')
+    input#opt4.hidden(type='radio' name='selectSearchType' value="all" onclick='selectSearchByType()')
+    span.label
+    | All
+  label.radioHeader(for='opt5')
+    input.searchHolder(id='myInput' type='text' onkeyup="searchQuery()" placeholder="Search for names...")
+

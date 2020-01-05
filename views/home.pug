@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 Shipping Movements Dashboard
+    div(class='upload-form')
+        form(action='/movements' method='post' class="form-horizontal" enctype='multipart/form-data')
+            div(class="form-group row")
+                label(for="file" class="control-label col-sm-6") Please upload a file
+                div(class="col-sm-6")
+                    input(type='file' id="file" name='file' class="form-control-file")
+            div(class="form-group row text-center")
+                button(type='submit' for="name" class='text-center btn btn-primary') Upload
