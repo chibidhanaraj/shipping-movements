@@ -106,11 +106,11 @@ app.post('/movements', function (req, res) {
     });
 });
 
-app.get('/', function (req, res) {
+app.get('/home', function (req, res) {
     res.render('home')
 });
 
-app.get('/result', function (req, res) {
+app.get('/', function (req, res) {
     var shippingJson = require('./output.json')
     res.render('movementsTable', { shippingLists: shippingJson })
 });
